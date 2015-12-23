@@ -10,14 +10,14 @@ Developer: @poopsplat in Chicago
 /*******************************************/
 /* Box Model Hack: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 *, *:before, *:after {
-  box-sizing: inherit;
+  	box-sizing: inherit;
 }
 html {
-  box-sizing: border-box;
+  	box-sizing: border-box;
 }
 /* Micro clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix {
-  *zoom: 1;
+	*zoom: 1;
 }
 .clearfix:before,
 .clearfix:after {
@@ -25,25 +25,114 @@ html {
     display: table;
 }
 .clearfix:after {
-  clear: both;
+		clear: both;
 }
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
 body {
-  color: black;
-  font-size: 16px;
-  background: white;
+  	color: black;
+  	font-size: 16px;
+  	color: #033048;
+  	background: white;
+  	font-family: 'Open Sans', Tahoma, Arial;
+  	background-color: #F2F6F5;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+header {
+	background-color: #033048;
+	width: 100%;
+}
 
-/******************************************
-/* PAGES
-/*******************************************/
+nav {
+	text-align: center; 
+}
+
+nav ul {
+	color: #f9e42e;
+	font-weight: 600;
+	font-size: 24px;
+	position: relative;
+	list-style-type: none;
+	margin: 0 10px;
+	padding: none;
+	float: right;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #f9e42e;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 800;
+}
+
+p {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+h2 li {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+aside {
+	width: 200px;
+
+}
+
+aside p {
+	font-weight: 300;
+	font-size: 22px;
+}
+
+a p {
+	text-align: right;
+}
 
 /******************************************
 /* SECTIONS
 /*******************************************/
+
+.logo {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 800;
+	padding: 30px 0 30px 40px;
+
+}
+
+.article-container {
+	max-width: 800px;
+	float: left;
+	margin-left: 40px;
+
+}
+
+
+.ad-unit {
+	width: 90px;
+	height: 970px;
+	float: right;
+}
+
+
+
