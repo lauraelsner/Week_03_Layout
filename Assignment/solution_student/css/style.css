@@ -38,37 +38,7 @@ body {
   	background-color: #F2F6F5;
 }
 
-header {
-	width: 100%;
-	padding-top: 20px;
-	background-color: #033048;
-}
-
-nav {
-	/*text-align: center; */
-}
-
-nav ul {
-	color: #f9e42e;
-	font-size: 24px;
-	font-weight: 600;
-	list-style-type: none;
-	margin: 10px 10px;
-	float: right;
-
-}
-
-nav li {
-	display: inline-block;
-	padding: 0 10px;
-}
-
-nav a {
-	color: #f9e42e;
-	text-decoration: none;
-}
-
-img {
+article img {
 	width: 100%;
 }
 
@@ -90,11 +60,16 @@ p {
 h2 li {
 	font-size: 24px;
 	font-weight: 300;
+	list-style-type: none;
 }
 
 aside p {
 	font-weight: 300;
 	font-size: 22px;
+}
+
+a {
+	text-decoration: none;
 }
 
 a p {
@@ -104,65 +79,172 @@ a p {
 
 /******************************************
 /* SECTIONS
-/*******************************************/
+/******************************************/
+
+/*MAIN CONTENT*/
+.main-content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*HEADER SECTION*/
 
 .logo {
 	color: #fff;
 	font-size: 24px;
 	font-weight: 800;
-	/*margin-top: 40px;*/
 	padding: 30px 0 30px 40px;
-	display: inline;
 	float: left;	
 }
+
+header {
+	width: 100%;
+	/*max-width: 1200px;*/
+	background-color: #033048;
+}
+
+nav {
+	display: inline-block;
+	float: right;
+	padding-right: 40px;
+}
+
+nav ul {
+	color: #f9e42e;
+	font-weight: 600;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 24px;
+}
+
+nav a {
+	color: #f9e42e;
+	text-decoration: none;
+}
+
+/*ARTICLE SECTION*/
 
 .article-container {
 	float: left;
 	max-width: 700px;
 	margin-left: 40px;
+
 }
+
+.read-more {
+	text-align: right;
+	font-weight: 600;
+	font-size: 24px;
+	color: #033048;
+	transition: background-color 0.5s ease;
+	transition: text-decoration 0.5s ease;
+}
+
+.read-more:hover {
+	color: #00507A;
+	text-decoration: underline;
+}
+
+.learn-more {
+	text-align: right;
+	font-weight: 600;
+	font-size: 22px;
+	color: #033048;
+	transition: background-color 0.5s ease;
+	transition: text-decoration 0.5s ease;
+}
+
+.learn-more:hover {
+	color: #00507A;
+	text-decoration: underline;
+}
+
+/*ASIDE SECTION*/
 
 aside {
 	float: left;
-	width: 240px;
+	max-width: 240px;
+	margin-left: 20px;
+	margin-right: 40px;
 }
 
+aside li {
+	font-size: 24px;
+}
 
 .ad-unit {
 	width: 90px;
 	height: 970px;
+	margin-top: 40px;
 }
 
-.sign-up {
-	padding: 20px 0;
-	background: #f9e42e;
-}
-
-.sign-up .button {
-	height: 40px;
-	width: 200px;
-	color: #fff;
-	font-size: 14px;
-	font-weight: 800;
-	line-height: 40px;
-	border-radius: 5px;
-	text-align: center;
-	background: #033048;
-	text-decoration: none;
-	display: inline-block;
-	transition: color .2s ease-out, background .2s ease-out;
-
-}
-
-.sign-up .button:hover {
-	background: #08639B;
+/*SIGN UP SECTION*/
+.footer-wrapper {
+	clear: both;
 }
 
 footer {
-	clear: both;
-	text-align: center;
-	background: 
+	background: #121212;
 }
 
+.sign-up {
+	padding: 30px;
+	background: #f9e42e;
+}
 
+.button-secondary {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 800;
+	border-radius: 5px;
+	background-color: #033048;
+	transition: background-color 0.5s ease;
+	/*Doing a little experimenting with transtions*/
+	height: 36px;
+	margin: 0 auto;
+	padding: 9px;
+	text-align: center;
+	width: 200px;
+}
+
+.button-secondary:hover {
+	background-color: #00507A;
+}
+
+footer h1 {
+	color: #f9e42e;
+	text-align: center;
+	padding-top: 30px;
+	margin-top: 0;
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 9px;
+	font-weight: 600;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.twitter {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.facebook {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
 
