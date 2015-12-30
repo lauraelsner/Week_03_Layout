@@ -34,27 +34,23 @@ html {
 body {
   	color: #033048;
   	font-size: 16px;
-  	font-family: 'Open Sans', Tahoma, Arial;
   	background-color: #F2F6F5;
+  	font-family: 'Open Sans', Tahoma, Arial;
 }
 
 article img {
 	width: 100%;
+	padding: 10px 0;
 }
 
-h1 {
+/*h1 {
 	font-size: 40px;
 	font-weight: 600;
-}
+}*/
 
 h2 {
 	font-size: 32px;
 	font-weight: 800;
-}
-
-p {
-	font-size: 24px;
-	font-weight: 300;
 }
 
 h2 li {
@@ -63,17 +59,35 @@ h2 li {
 	list-style-type: none;
 }
 
-aside p {
+p {
+	margin: 10px 0;
+	font-size: 24px;
 	font-weight: 300;
+}
+
+aside p {
 	font-size: 22px;
+	font-weight: 300;
+}
+
+a p {
+	text-align: right;
 }
 
 a {
 	text-decoration: none;
 }
 
-a p {
-	text-align: right;
+.headline-link {
+	color: #033048;
+	font-size: 40px;
+	font-weight: 600;
+	transition: color 0.2s ease;
+
+}
+
+.headline-link:hover {
+	color: #00507A;
 }
 
 
@@ -83,18 +97,30 @@ a p {
 
 /*MAIN CONTENT*/
 .main-content {
-	max-width: 1200px;
 	margin: 0 auto;
+	max-width: 1000px;
 }
 
 /*HEADER SECTION*/
 
+.header-content {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
 .logo {
+	float: left;	
 	color: #fff;
-	font-size: 24px;
+	font-size: 2em;
 	font-weight: 800;
 	padding: 30px 0 30px 40px;
-	float: left;	
+	transition: color 0.5s ease;
+
+}
+
+.logo:hover {
+	color: #FDF5B0;
+	cursor: pointer;
 }
 
 header {
@@ -104,9 +130,10 @@ header {
 }
 
 nav {
-	display: inline-block;
 	float: right;
+	margin-top: 20px;
 	padding-right: 40px;
+	display: inline-block;
 }
 
 nav ul {
@@ -116,9 +143,9 @@ nav ul {
 }
 
 nav li {
-	display: inline-block;
 	padding: 0 10px;
 	font-size: 24px;
+	display: inline-block;
 }
 
 nav a {
@@ -126,41 +153,46 @@ nav a {
 	text-decoration: none;
 }
 
+nav a:hover {
+	color: #FDF5B0;
+}
+
+
 /*ARTICLE SECTION*/
 
 .article-container {
 	float: left;
 	max-width: 700px;
-	margin-left: 40px;
+	margin: 40px 10px 0 40px;
+}
 
+.article {
+	margin-top: 25px;
 }
 
 .read-more {
-	text-align: right;
-	font-weight: 600;
-	font-size: 24px;
 	color: #033048;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: right;
+	margin: 30px 0;
 	transition: background-color 0.5s ease;
-	transition: text-decoration 0.5s ease;
 }
 
 .read-more:hover {
 	color: #00507A;
-	text-decoration: underline;
 }
 
 .learn-more {
-	text-align: right;
-	font-weight: 600;
-	font-size: 22px;
 	color: #033048;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: left;
 	transition: background-color 0.5s ease;
-	transition: text-decoration 0.5s ease;
 }
 
 .learn-more:hover {
 	color: #00507A;
-	text-decoration: underline;
 }
 
 /*ASIDE SECTION*/
@@ -168,12 +200,27 @@ nav a {
 aside {
 	float: left;
 	max-width: 240px;
-	margin-left: 20px;
-	margin-right: 40px;
+	margin: 40px 40px 0 10px;
+}
+
+aside ul {
+	margin: 10px 0;
+	padding-left: 0;
 }
 
 aside li {
 	font-size: 24px;
+	list-style-type: none;
+}
+
+.categories ul a {
+	color: #033048;
+	transition: background-color 0.5s ease;
+
+}
+
+.categories ul a:hover {
+	color: #00507A;
 }
 
 .ad-unit {
@@ -198,17 +245,16 @@ footer {
 
 .button-secondary {
 	color: #fff;
+	height: 36px;
+	padding: 9px;
+	width: 200px;
+	margin: 0 auto;
 	font-size: 12px;
 	font-weight: 800;
 	border-radius: 5px;
+	text-align: center;
 	background-color: #033048;
 	transition: background-color 0.5s ease;
-	/*Doing a little experimenting with transtions*/
-	height: 36px;
-	margin: 0 auto;
-	padding: 9px;
-	text-align: center;
-	width: 200px;
 }
 
 .button-secondary:hover {
@@ -216,18 +262,18 @@ footer {
 }
 
 footer h1 {
-	color: #f9e42e;
-	text-align: center;
-	padding-top: 30px;
 	margin-top: 0;
+	color: #f9e42e;
+	padding-top: 30px;
+	text-align: center;
 }
 
 footer p {
 	color: #fff;
-	text-align: center;
 	padding: 20px;
 	font-size: 9px;
 	font-weight: 600;
+	text-align: center;
 }
 
 .social-icons {
@@ -235,16 +281,16 @@ footer p {
 }
 
 .twitter {
-	display: inline-block;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+	display: inline-block;
 }
 
 .facebook {
-	display: inline-block;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+	display: inline-block;
 }
 
