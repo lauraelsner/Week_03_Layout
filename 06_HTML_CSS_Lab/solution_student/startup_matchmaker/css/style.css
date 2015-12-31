@@ -107,47 +107,47 @@ body {
 }
 
 .taste {
-	text-decoration: line-through;
 	color: #989898;
+	text-decoration: line-through;
 }
 
 .are {
 	border-bottom: 4px solid yellow;
 }
 
-.hero-image {
-	width: 100%;
+.hero {
+	height: 664px;
+	max-width: 100%;
+	background-size: cover;
+	box-shadow: 0 0 10px #777777;
+	background-image: url('../images/coworking.jpg');
+}
+
+.hero-content {
+	left: 60%;
+	top: 300px;
+	max-width: 35%;
+	position: absolute;
+	background-color: #fff;
+	padding: 0 30px 30px 30px;
+	border: 1px solid #C6C6C6;
+	box-shadow: 0 0 10px #777777;
+}
+
+.hero-content p {
+	font-size: 24px;
+	max-width: 400px;
+	line-height: 1.4em;
 }
 
 .hero .button {
+	max-width: 400px;
 	background-color: #FDF831;
 	box-shadow: 0 3px 0 0 #C9C524;
 }
 
 .hero .button:hover {
 	background-color: #FFFF99;
-}
-
-.hero-content {
-	background-color: #fff;
-	max-width: 40%;
-	border: 1px solid #C6C6C6;
-	box-shadow: 2px #C6C6C6;
-	padding: 20px;
-}
-
-.hero-content p {
-	font-size: 24px;
-	line-height: 1.4em;
-}
-
-.create {
-	max-width: 33%;
-	border-right: 2px solid #C6C6C6;
-	padding: 0 20px 0 40px;
-	margin-top: 20px;
-	float: left;
-	margin-bottom: 60px;
 }
 
 .do-things {
@@ -159,6 +159,7 @@ body {
 	line-height: 1.4em;
 	font-family: 'Merriweather-Sans', sans-serif;
 	margin-top: 10px;
+	max-width: 
 }
 
 .button {
@@ -168,8 +169,8 @@ body {
 	border-radius: 5px;
 	text-align: center;
 	max-width: 275px;
-	min-height: 50px;
-	padding-top: 7px;
+	min-height: 55px;
+	padding: 9px 5px 0 5px;
 	font-weight: 700;
 	box-shadow: 0 3px 0 0 #9D9D9D;
 	transition: all .15s ease-in-out;
@@ -178,6 +179,15 @@ body {
 .button:hover {
 	background-color: #dadada;
 	cursor: pointer;
+}
+
+.create {
+	max-width: 33%;
+	border-right: 2px solid #C6C6C6;
+	padding: 0 20px 0 40px;
+	margin-top: 20px;
+	float: left;
+	margin-bottom: 60px;
 }
 
 .find-developer {
@@ -212,7 +222,6 @@ p {
 footer {
 	background-color: #000;
 	color: #fff;
-	border-bottom: 2px solid #fff;
 	clear: both;
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 18px;
@@ -222,6 +231,8 @@ footer p {
 	padding: 20px 0 20px 40px;
 	margin-bottom: 0;
 }
+
+
 
 
 
