@@ -145,7 +145,8 @@ nav a:hover {
 .article-container {
 	float: left;
 	max-width: 700px;
-	margin: 40px 10px 100px 40px;
+	/*TAKING THIS OUT PER MATT'S SUGGESTION*/
+	/*margin: 40px 10px 100px 40px;*/
 }
 
 
@@ -210,7 +211,8 @@ nav a:hover {
 aside {
 	float: left;
 	max-width: 240px;
-	margin: 40px 40px 0 10px;
+	/*TAKING THIS OUT PER MATT'S SUGGESTION*/
+	/*margin: 40px 40px 0 10px;*/
 }
 
 aside ul {
@@ -251,6 +253,7 @@ footer {
 .sign-up {
 	padding: 30px;
 	background: #f9e42e;
+	margin-top: 100px;
 }
 
 .button-secondary {
@@ -261,10 +264,13 @@ footer {
 	margin: 0 auto;
 	font-size: 12px;
 	font-weight: 800;
-	border-radius: 5px;
 	text-align: center;
+	border-radius: 5px;
 	background-color: #033048;
 	transition: background-color 0.5s ease;
+
+	/*MATTS RECOMMENDED REVISION*/
+	display: block;
 }
 
 .button-secondary:hover {
@@ -303,5 +309,24 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 	display: inline-block;
+}
+
+
+/*REVISONS AFTER MATT'S FEEDBACK JUST RETAINING ORIGINAL CODE INLINE ABOVE FOR REFERENCE*/
+.main-content {
+	width: 70%;
+	float: left;
+	margin-right: 20px;
+}
+
+.aside {
+	width: 30%;
+	float: left;
+}
+
+.column-container {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 40px;
 }
 
